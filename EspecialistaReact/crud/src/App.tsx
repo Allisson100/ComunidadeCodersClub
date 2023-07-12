@@ -16,12 +16,13 @@ function App() {
   const [todos , setTodos] = useState<Todo[]>(() => {
     const storedTodos = localStorage.getItem('@coderslist:todos')
 
-    if(storedTodos) {
-      return JSON.parse(storedTodos)
-    }
+      if(storedTodos) {
+        return JSON.parse(storedTodos) as Todo[]
+      }
 
-    return []
-  })
+      return []
+    }
+  )
 
   useEffect(() => {
     localStorage.setItem('@coderslist:todos', JSON.stringify(todos))
