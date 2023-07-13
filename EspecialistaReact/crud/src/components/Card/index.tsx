@@ -24,7 +24,7 @@ export default function Card ({ todo , completeTodo , deleteTodo }: CardProps) {
     return (
         <CardContainer style={(todo.completed === false) ? {opacity: 1} : {opacity: 0.5}}>
             <h2>{todo.title}</h2>
-            <CardButtons>
+            <CardButtons enabled={true}>
                 <button onClick={handleCompleteTodo}>
                     {(todo.completed === false) ? 'Completar' : 'Retomar'}
                 </button>
