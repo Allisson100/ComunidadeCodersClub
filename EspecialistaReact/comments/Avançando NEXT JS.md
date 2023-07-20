@@ -99,3 +99,5 @@ Um dos porblemas que nós temos com o SSG é justamente essa falta de dinamicida
 O revalidate vai basicamente buildar nossa aplicação de tempos em tempos, então toda vez que nosso api mudar, nós não precisamos ir no next e buildar novamente esse revalidate vai fazer isso de forma automática. Lembrando que o tempo é em segundos.
 
 Essa funcionalidade só funciona na Vercel.
+
+Assistir aula 66.
